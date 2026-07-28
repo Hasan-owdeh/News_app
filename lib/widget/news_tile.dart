@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_app_ui_setup/models/article_model.dart';
+import 'package:news_app/models/article_model.dart';
+// import 'package:news_app_ui_setup/models/article_model.dart';
 
 // cached network image
 class NewsTile extends StatelessWidget {
@@ -9,7 +10,7 @@ class NewsTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisSize: MainAxisSize.min,
+      mainAxisSize: MainAxisSize.min,//to make the column take only the space it needs and not the whole screen
       children: [
         ClipRRect(
             borderRadius: BorderRadius.circular(6),
@@ -18,7 +19,8 @@ class NewsTile extends StatelessWidget {
               height: 200,
               width: double.infinity,
               fit: BoxFit.cover,
-            )),
+            )
+            ),
         const SizedBox(
           height: 12,
         ),
@@ -44,3 +46,4 @@ class NewsTile extends StatelessWidget {
     );
   }
 }
+

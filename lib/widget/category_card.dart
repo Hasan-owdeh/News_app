@@ -19,7 +19,6 @@ class CategoryCard extends StatelessWidget {
               image: AssetImage(category.imageUrl),//to load the image from the assets folder
               fit: BoxFit.cover, //to cover the entire container with the image
             ),
-            color: Colors.lightGreenAccent,
             borderRadius: BorderRadius.circular(15),
       
           ),
